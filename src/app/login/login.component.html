@@ -1,28 +1,27 @@
+<body>
 <div class="container">
   <div class="row">
     <div class="col-3"></div>
-      <div style="background: #1443b9; border-radius: 10px;" class="col-6" >
-        <h3 style="text-align:center; color: aliceblue;  margin-top:25px;">Sign in to your account</h3>
+      <div class="col-6">
+        <h3>Sign in to your account</h3>
 
         <div class="background">
-          <form style="padding: 20px;" [formGroup]="loginForm" (ngSubmit)="sign()" class="bg-white">
+          <form [formGroup]="loginForm" (ngSubmit)="sign()" class="bg-white">
 
             <div class="form-group">
               <label>Email address</label>
               <input type="email" class="form-control" formControlName="email" name="email" placeholder="Enter your email address...">
-              <span style="color:red" *ngIf="email.invalid && email.touched">please enter the valid email</span>
+              <span *ngIf="email.invalid && email.touched">please enter the valid email</span>
             </div><br>
 
             <div class="form-group">
               <label>Password</label>
-              <a style="margin-left:380px;" href="">Forgot password?</a>
+              <a href="">Forgot password?</a>
               <input type="password" class="form-control" formControlName="pass" name="pass" placeholder="Enter your password...">
-              <span style="color:red" *ngIf="pass.invalid && pass.touched">please enter the valid password</span>
+              <span *ngIf="pass.invalid && pass.touched">please enter the valid password</span>
             </div><br>
 
-            <button  type="submit" class="btn btn-success btn-lg btn-block" style="margin-left: 250px;">Sign in</button>
-
-            
+            <button  type="submit" class="btn btn-success btn-btn-block" style="margin-left: 255px;">Sign in</button>
 
           </form>
         </div>
@@ -35,11 +34,13 @@
 <div class="container">
   <div class="row">
     <div  class="col-3"></div>
-      <div class="col-6" style="background:#1443b9">
+      <div class="col-6">
         <div class="user">
-          <h6 style="text-align: center;">New user? <a href="">Create an account</a></h6>
+          <h6>New user? <a href="http://localhost:4200/register">Create an account</a></h6>
         </div>
       </div>
     <div  class="col-3"></div>
   </div>
 </div>
+</body>
+
