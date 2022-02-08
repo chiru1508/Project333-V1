@@ -1,0 +1,50 @@
+.container1{
+ 
+    /* box-sizing: border-box; */
+      background-color: #2554C7;
+       width: 550px;
+       height: 730px;
+     margin-left: 540PX;
+     float: left;
+     
+      
+   
+   }
+   .container{
+       /* padding-top: 35px;
+       padding-bottom: 30px;
+       padding-right: 15px;
+       padding-left: 15px; */
+      width:450px ;
+      padding: 26px;
+      /* margin: 20px; */
+      /* margin-top: 20px; */
+      /* margin-bottom: 35PX; */
+     /* margin-left: 80px;
+      margin-right: 30px; */
+        background-color: white;
+        border-radius: 3px;
+   }
+   #exampleInputEmail1{
+       background-color: whitesmoke;
+   }
+   .txt{
+     
+       text-align: center;
+       color:seashell;
+      font-family: serif;
+   /* padding-top: 35px; */
+      /* font-size:1.875em; */
+    
+   
+   }
+   .form-control{
+       background-color:whitesmoke;
+   }
+   .line {
+       text-decoration-line:underline;
+       color: #3944bc;
+   }
+   .hovertext{
+       cursor: pointer;
+   }

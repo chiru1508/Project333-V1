@@ -1,0 +1,45 @@
+
+
+<div class="container1">
+    <div class="txt"><h2>Register your account</h2>
+</div>
+<div class="container">
+    <form [formGroup]="regForm" (ngSubmit)="signup()">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Name</label>
+          <input type="email"  class="form-control ftxt" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your full name..." name="fname" formControlName="fname">
+     <small style="color: red; font-size: small;" *ngIf="fname.invalid && fname.touched">Enter Valid name</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Userame</label>
+            <input type="email" class="form-control ftxt" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Username..." name="uname" formControlName="uname">
+       <small style="color: red; font-size: small;" *ngIf="uname.invalid && uname.touched">Enter Valid Userame</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">EmailAddress</label>
+            <input type="email" class="form-control ftxt" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your Email..." name="uemail" formControlName="uemail">
+       <small style="color: red; font-size: small;" *ngIf="uemail.invalid && uemail.touched">Enter your email</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password"  class="form-control ftxt" id="exampleInputEmail1"placeholder="Enter your password..." name="upass" formControlName="upass">
+            <small style="color: red; font-size: small;" *ngIf="upass.invalid && upass.touched">Enter valid password</small>
+          <small style="color: red; font-size: small;" *ngIf="upass.errors.required">Password is required</small></div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Confirm Password</label>
+                <input type="password" 
+                class="form-control ftxt" 
+                id="exampleInputEmail1" 
+                placeholder="Enter your password again..." name="cpass" formControlName="cpass">
+                <small style="color: red; font-size: small;" *ngIf="cpass.invalid && cpass.touched">Password Invalid</small>
+                <!-- <small style="color:red; font-size:small;" *ngIf="cpass.errors.mustMatch">Password must match</small> -->
+              </div>
+              
+          <button type="submit" class="btn btn-success btn-sm btn-block">Sign up</button>
+          <!-- <br> -->
+          <span style="margin: auto; display: table;">Already have an account?<a class="line hovertext">Sign.in</a></span>   
+     
+        
+      </form>
+  </div>
+  </div>
