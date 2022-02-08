@@ -1,24 +1,14 @@
-#border
-{
-   border:100px solid blue;
-   padding: 40px;
-  
-}
-.body
-{
-    background-color: rgb(10, 10, 73);
-}
 .background
 {
     margin-top: 50px;
-    
 }
 
-.user{
-    border: 1px solid rgb(5, 5, 65);
-    background-color: aliceblue;
+.user
+{
+    background-color: whitesmoke;
     text-align: center;
     margin-top:50px;
     padding: 20px;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
+    border-radius: 5px;
 }

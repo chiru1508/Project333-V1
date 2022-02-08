@@ -1,6 +1,7 @@
-export class EmployeeModel{
+export class EmployeeModel
+{
     id: number=0;
-    firtName:string="";
+    firstName:string="";
     lastName:string="";
     email:string="";
     mobile:string="";

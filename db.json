@@ -1,5 +1,22 @@
 {
-  "posts": [],
+  "posts": [
+    {
+      "id": 1,
+      "firstName": "Chiru",
+      "lastName": "BR",
+      "email": "chiru1508@gmail.com",
+      "mobile": "9482424698",
+      "salary": "25000"
+    },
+    {
+      "id": 2,
+      "firstName": "adarsh",
+      "lastName": "h",
+      "email": "chiru1508@gmail.com",
+      "mobile": "98855555",
+      "salary": "25000"
+    }
+  ],
   "comments": [],
   "profile": {
     "name": "typicode"

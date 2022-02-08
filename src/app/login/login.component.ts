@@ -6,30 +6,36 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
-
+export class LoginComponent implements OnInit 
+{
   constructor() { }
-  ngOnInit(): void {
+
+  ngOnInit(): void 
+  {
     throw new Error('Method not implemented.');
   }
-  loginForm = new FormGroup({
+  
+  loginForm = new FormGroup(
+  {
     email: new FormControl("",[Validators.required,Validators.pattern(/^[a-zA-Z0-9.!#$%&’+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$/)]),
-    pass:new FormControl("",[Validators.required,Validators.pattern(/^(\s|.{0,7}|[^0-9]|[^A-Z]|[^a-z]|[^$#@%]|\s)$/)])
+    pass:new FormControl("",[Validators.required,Validators.minLength(6)])
   })
 
-get email()
-{
-   return this.loginForm.get('email')
-}
+  get email()
+  {
+    return this.loginForm.get('email')
+  }
 
-get pass(){
-  return this.loginForm.get('pass')
-}
+  get pass()
+  {
+    return this.loginForm.get('pass')
+  }
 
-sign()
-{
-  console.log(this.loginForm.value)
-  localStorage.setItem("Email",JSON.stringify(this.loginForm.value.email))
-  localStorage.setItem("Password",this.loginForm.value.pass)
-}
+  sign()
+  {
+    console.log(this.loginForm.value)
+    localStorage.setItem("Email",this.loginForm.value.email)
+    localStorage.setItem("Password",this.loginForm.value.pass)
+  }
+
 }
